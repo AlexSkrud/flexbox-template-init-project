@@ -1,0 +1,15 @@
+@use "../presets/skin";
+@use "../presets/variables";
+@use "../mixins/mixins-media";
+@use "../mixins/mixins";
+
+.header {
+  overflow: hidden;
+
+  min-height: 100px;
+  margin-bottom: 30px;
+
+  border-radius: 0 0 7px 7px;
+
+  @include bg-color;
+}

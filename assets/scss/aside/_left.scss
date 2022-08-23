@@ -1,0 +1,25 @@
+@use "../presets/skin";
+@use "../presets/variables";
+@use "../mixins/mixins-media";
+@use "../mixins/mixins";
+
+.left {
+  @include md-min {
+    flex: 0 0 $left-sidebar-width;
+    order: 1;
+
+    margin-bottom: $gap-sm;
+  }
+  @include md-xs {
+    order: 2;
+
+    width: 50%;
+    padding-right: $gap-xs;
+  }
+  @include xs {
+    order: 2;
+
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
